@@ -1,0 +1,47 @@
+body {
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  font: 16px/20px Arial;
+}
+button {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+  border-radius: 0.25em;
+}
+/* button:hover {
+  background-color: transparent;
+} */
+#list {
+  list-style-type: none;
+}
+.error {
+  border-color: red;
+}
+#input {
+  margin: 0 0 5px 0;
+}
+.error_message {
+  color: red;
+}
+.list_item {
+  font-style: normal;
+  margin: 0 0 5px 0;
+}
+#list {
+  margin: 0;
+  padding: 0;
+}
+.delete {
+  margin: 0 0 0 5px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+.check {
+  margin-right: 5px;
+}
