@@ -33,9 +33,8 @@ form.onsubmit = (event) => {
   button.className = "delete";
   li.append(button);
 
-  check.onclick = () => {
-    check.setAttribute("disabled", true);
-    button.setAttribute("disabled", true);
+  check.onchange = ({ target }) => {
+    target.setAttribute("disabled", true);
     li.className = "line-through";
   };
 };
