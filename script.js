@@ -33,14 +33,15 @@ form.onsubmit = (event) => {
   button.className = "delete";
   li.append(button);
 
-  check.onchange = ({ target }) => {
-    target.setAttribute("disabled", true);
-    li.className = "line-through";
+  list.onchange = ({ target }) => {
+    if (check.checked) {
+      target.setAttribute("disabled", true);
+      li.className = "line-through";
+    }
   };
 };
 
-list.onclick = (event) => {
-  const target = event.target;
+list.onclick = ({ target }) => {
   const isButton = target.className === "delete";
 
   if (isButton) {
