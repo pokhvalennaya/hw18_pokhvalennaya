@@ -33,9 +33,9 @@ form.onsubmit = (event) => {
   button.className = "delete";
   li.append(button);
 
-  check.onchange = ({ target }) => {
+  list.onchange = ({ target }) => {
+    target.closest(".list_item").className = "line-through";
     target.setAttribute("disabled", true);
-    li.className = "line-through";
   };
 };
 
@@ -43,8 +43,7 @@ list.onclick = ({ target }) => {
   const isButton = target.className === "delete";
 
   if (isButton) {
-    const liBlock = target.closest(".list_item");
-    liBlock.remove();
+    target.closest(".list_item").remove();
   }
 };
 toDoInput.oninput = () => {
