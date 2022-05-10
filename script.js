@@ -32,11 +32,11 @@ form.onsubmit = (event) => {
   button.innerHTML = "Delete";
   button.className = "delete";
   li.append(button);
+};
 
-  list.onchange = ({ target }) => {
-    target.closest(".list_item").className = "line-through";
-    target.setAttribute("disabled", true);
-  };
+list.onchange = ({ target }) => {
+  target.closest(".list_item").className = "line-through";
+  target.setAttribute("disabled", true);
 };
 
 list.onclick = ({ target }) => {
